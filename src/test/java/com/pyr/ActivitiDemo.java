@@ -2,6 +2,8 @@ package com.pyr;
 
 import org.activiti.engine.*;
 import org.activiti.engine.repository.Deployment;
+import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
@@ -85,5 +87,23 @@ public class ActivitiDemo {
         // 3. 根据任务id完成任务
         taskService.complete(task.getId());
         System.out.println("DONE!");
+    }
+
+    @Test
+    public void queryProcessDefinition(){
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        RepositoryService repositoryService = processEngine.getRepositoryService();
+        ProcessDefinitionQuery processDefinitionQuery = repositoryService.createProcessDefinitionQuery();
+        List<ProcessDefinition> definitionList = processDefinitionQuery.processDefinitionKey("myProcess")
+                .orderByProcessDefinitionVersion()
+                .desc()
+                .list();
+        for (ProcessDefinition processDefinition : definitionList) {
+            System.out.println("流程定义 id="+processDefinition.getId());
+            System.out.println("流程定义 name="+processDefinition.getName());
+            System.out.println("流程定义 key="+processDefinition.getKey());
+            System.out.println("流程定义 Version="+processDefinition.getVersion());
+            System.out.println("流程部署ID ="+processDefinition.getDeploymentId());
+        }
     }
 }
