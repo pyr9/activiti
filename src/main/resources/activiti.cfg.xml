@@ -17,6 +17,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
         <property name="maxActive" value="3" />
         <property name="maxIdle" value="1" />
     </bean>
+<!--    默认方式下bean的id 固定为processEngineConfiguration-->
     <bean id="processEngineConfiguration"
           class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
         <!-- 引用数据源 上面已经设置好了-->
