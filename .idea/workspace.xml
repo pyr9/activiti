@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,23 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ActivitiDemo.queryProcessDefinition">
+  <component name="RunManager" selected="JUnit.ActivitiDemo.deleteDeployment">
+    <configuration name="ActivitiDemo.deleteDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
+      <option name="METHOD_NAME" value="deleteDeployment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActivitiDemo.queryProcessDefinition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -112,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivitiDemo.deleteDeployment" />
         <item itemvalue="JUnit.ActivitiDemo.queryProcessDefinition" />
         <item itemvalue="JUnit.ActivitiDemo.testFindPersonalTasks" />
         <item itemvalue="JUnit.ActivitiDemo.testStartProcess" />
@@ -143,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675346066486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="流程定义信息查询">
+      <created>1675347183280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675347183280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +186,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="生成activiti的25张数据库表" />
     <MESSAGE value="流程操作&#10;1.流程定义&#10;2.流程部署:将流程图的内容存储到数据库&#10;3.启动流程实例&#10;4.待办任务查询&#10;5.流程任务处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="流程操作&#10;1.流程定义&#10;2.流程部署:将流程图的内容存储到数据库&#10;3.启动流程实例&#10;4.待办任务查询&#10;5.流程任务处理" />
+    <MESSAGE value="流程定义信息查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="流程定义信息查询" />
   </component>
 </project>

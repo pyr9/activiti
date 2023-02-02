@@ -89,6 +89,7 @@ public class ActivitiDemo {
         System.out.println("DONE!");
     }
 
+    //ACT_RE_PROCDEF
     @Test
     public void queryProcessDefinition(){
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
@@ -105,5 +106,20 @@ public class ActivitiDemo {
             System.out.println("流程定义 Version="+processDefinition.getVersion());
             System.out.println("流程部署ID ="+processDefinition.getDeploymentId());
         }
+    }
+
+    @Test
+    public void deleteDeployment() {
+        // 流程部署id
+        String deploymentId = "1";
+
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        // 通过流程引擎获取repositoryService
+        RepositoryService repositoryService = processEngine
+                .getRepositoryService();
+        //删除流程定义，如果该流程定义已有流程实例启动则删除时出错
+        //repositoryService.deleteDeployment(deploymentId);
+        //设置true 级联删除流程定义，即使该流程有流程实例启动也可以删除，设置为false非级别删除方式，如果流程
+        repositoryService.deleteDeployment(deploymentId, true);
     }
 }
