@@ -1,6 +1,8 @@
 package com.pyr;
 
 import org.activiti.engine.*;
+import org.activiti.engine.history.HistoricActivityInstance;
+import org.activiti.engine.history.HistoricActivityInstanceQuery;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
@@ -80,12 +82,12 @@ public class ActivitiDemo {
         // 2. 获取taskService
         TaskService taskService = processEngine.getTaskService();
         // 3. 如果可以确定是一个任务，可以直接通过singleResult获得, 依次修改taskAssignee为直线经理，部门经理，财务人员
-        Task task = taskService.createTaskQuery()
+        List<Task> tasks = taskService.createTaskQuery()
                 .processDefinitionKey("myProcess")
-                .taskAssignee("财务人员")
-                .singleResult();
+                .taskAssignee("张三")
+                .list();
         // 3. 根据任务id完成任务
-        taskService.complete(task.getId());
+        taskService.complete(tasks.get(0).getId());
         System.out.println("DONE!");
     }
 
@@ -121,5 +123,34 @@ public class ActivitiDemo {
         //repositoryService.deleteDeployment(deploymentId);
         //设置true 级联删除流程定义，即使该流程有流程实例启动也可以删除，设置为false非级别删除方式，如果流程
         repositoryService.deleteDeployment(deploymentId, true);
+    }
+
+    /**
+     * 查看历史信息
+     */
+    @Test
+    public void findHistoryInfo(){
+//      获取引擎
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        获取HistoryService
+        HistoryService historyService = processEngine.getHistoryService();
+//        获取 actinst表的查询对象
+        HistoricActivityInstanceQuery instanceQuery = historyService.createHistoricActivityInstanceQuery();
+//        查询 actinst表，条件：根据 InstanceId 查询
+//        instanceQuery.processInstanceId("2501");
+//        查询 actinst表，条件：根据 DefinitionId 查询
+        instanceQuery.processDefinitionId("myProcess:2:12503");
+//        增加排序操作,orderByHistoricActivityInstanceStartTime 根据开始时间排序 asc 升序
+        instanceQuery.orderByHistoricActivityInstanceStartTime().asc();
+//        查询所有内容
+        List<HistoricActivityInstance> activityInstanceList = instanceQuery.list();
+//        输出
+        for (HistoricActivityInstance hi : activityInstanceList) {
+            System.out.println(hi.getActivityId());
+            System.out.println(hi.getActivityName());
+            System.out.println(hi.getProcessDefinitionId());
+            System.out.println(hi.getProcessInstanceId());
+            System.out.println("<==========================>");
+        }
     }
 }
