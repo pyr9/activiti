@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/phoneExpense.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/phoneExpense.bpmn20.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +38,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "0ae6d31ddee42ec6e18f8e3c8a426d75"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -45,7 +47,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ActivitiDemo.queryProcessInstance">
+  <component name="RunManager" selected="JUnit.ActivitiDemo.testFindPersonalTasks">
     <configuration name="ActivitiDemo.addBusinessKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -62,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivitiDemo.deleteDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivitiDemo.assigneeUEL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
         <pattern>
@@ -72,23 +74,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
       <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="deleteDeployment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivitiDemo.findHistoryInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pyr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="findHistoryInfo" />
+      <option name="METHOD_NAME" value="assigneeUEL" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivitiDemo.testStartProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivitiDemo.testDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
         <pattern>
@@ -120,7 +106,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
       <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="testStartProcess" />
+      <option name="METHOD_NAME" value="testDeployment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiDemo.testFindPersonalTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
+      <option name="METHOD_NAME" value="testFindPersonalTasks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,23 +130,24 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivitiDemo.testFindPersonalTasks" />
+        <item itemvalue="JUnit.ActivitiDemo.assigneeUEL" />
+        <item itemvalue="JUnit.ActivitiDemo.testDeployment" />
         <item itemvalue="JUnit.ActivitiDemo.queryProcessInstance" />
         <item itemvalue="JUnit.ActivitiDemo.addBusinessKey" />
-        <item itemvalue="JUnit.ActivitiDemo.findHistoryInfo" />
-        <item itemvalue="JUnit.ActivitiDemo.deleteDeployment" />
-        <item itemvalue="JUnit.ActivitiDemo.testStartProcess" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62956812-8dfd-4263-866d-a74ccffc140f" name="Changes" comment="" />
+      <changelist id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="" />
       <created>1670999098268</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670999098268</updated>
       <workItem from="1670999101218" duration="1879000" />
+      <workItem from="1675604615819" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="生成activiti的25张数据库表">
       <created>1675345961625</created>
@@ -181,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675388304961</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加businessKey">
+      <created>1675604897793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675604897793</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" 查询流程实例">
+      <created>1675604907095</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675604907095</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,14 +223,16 @@
     <MESSAGE value="流程定义信息查询" />
     <MESSAGE value="流程删除" />
     <MESSAGE value="流程删除 ? 奇怪我这里把部署删除后，之前的历史任务也没有了" />
-    <option name="LAST_COMMIT_MESSAGE" value="流程删除 ? 奇怪我这里把部署删除后，之前的历史任务也没有了" />
+    <MESSAGE value="添加businessKey" />
+    <MESSAGE value=" 查询流程实例" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 查询流程实例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java</url>
-          <line>89</line>
+          <line>91</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

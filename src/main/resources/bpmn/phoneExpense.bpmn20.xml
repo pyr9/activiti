@@ -2,10 +2,10 @@
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
   <process id="myProcess" name="话费报销" isExecutable="true">
     <startEvent id="phoneExpense" name="话费报销"/>
-    <userTask id="sid-772f9de0-cafe-44bf-ad53-843edb660749" name="创建话费报销" activiti:assignee="张三"/>
-    <userTask id="sid-24f579ef-1bad-407b-97b8-822beec68b24" name="直线经理审批" activiti:assignee="直线经理"/>
-    <userTask id="sid-939696d5-5062-441e-a35d-3a731058a1f9" name="部门经理审批" activiti:assignee="部门经理"/>
-    <userTask id="sid-4c123987-8128-4d89-a882-9a44c95dad6a" name="财务审批" activiti:assignee="财务人员"/>
+    <userTask id="sid-772f9de0-cafe-44bf-ad53-843edb660749" name="创建话费报销" activiti:assignee="${assignee0}"/>
+    <userTask id="sid-24f579ef-1bad-407b-97b8-822beec68b24" name="直线经理审批" activiti:assignee="${assignee1}"/>
+    <userTask id="sid-939696d5-5062-441e-a35d-3a731058a1f9" name="部门经理审批" activiti:assignee="${assignee2}"/>
+    <userTask id="sid-4c123987-8128-4d89-a882-9a44c95dad6a" name="财务审批" activiti:assignee="${assignee3}"/>
     <endEvent id="sid-985e16a7-c028-45d8-8ce0-3e906c27fc69"/>
     <sequenceFlow id="sid-4e00c2e4-29be-4d35-9ffd-cbf612e07479" sourceRef="phoneExpense" targetRef="sid-772f9de0-cafe-44bf-ad53-843edb660749"/>
     <sequenceFlow id="sid-8645a2a0-b65c-4da5-b366-ddc449bd2bf3" sourceRef="sid-772f9de0-cafe-44bf-ad53-843edb660749" targetRef="sid-24f579ef-1bad-407b-97b8-822beec68b24"/>

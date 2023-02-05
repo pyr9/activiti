@@ -10,7 +10,9 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ActivitiDemo {
 
@@ -54,7 +56,7 @@ public class ActivitiDemo {
         // 3. 根据流程key和任务负责人 查询任务
         List<Task> tasks = taskService.createTaskQuery()
                 .processDefinitionKey("myProcess")
-                .taskAssignee("张三")
+                .taskAssignee("Lisa1")
                 .list();
         // 4. 输出
         tasks.forEach(task -> {
@@ -199,5 +201,24 @@ public class ActivitiDemo {
         }
     }
 
-
+    /**
+     * 设置流程负责人
+     */
+    @Test
+    public void assigneeUEL(){
+//      获取流程引擎
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        获取 RuntimeService
+        RuntimeService runtimeService = processEngine.getRuntimeService();
+//        设置assignee的取值，用户可以在界面上设置流程的执行
+        Map<String,Object> assigneeMap = new HashMap<>();
+        assigneeMap.put("assignee0","Lisa1");
+        assigneeMap.put("assignee1","李经理");
+        assigneeMap.put("assignee2","王总经理");
+        assigneeMap.put("assignee3","赵财务");
+//        启动流程实例，同时还要设置流程定义的assignee的值
+        runtimeService.startProcessInstanceByKey("myProcess",assigneeMap);
+//       输出
+        System.out.println(processEngine.getName());
+    }
 }
