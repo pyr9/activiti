@@ -172,4 +172,32 @@ public class ActivitiDemo {
     }
 
 
+    /**
+     * 查询流程实例
+     */
+    @Test
+    public void queryProcessInstance() {
+        // 流程定义key
+        String processDefinitionKey = "myProcess";
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        // 获取RunTimeService
+        RuntimeService runtimeService = processEngine.getRuntimeService();
+        List<ProcessInstance> list = runtimeService
+                .createProcessInstanceQuery()
+                .processDefinitionKey(processDefinitionKey)//
+                .list();
+
+        for (ProcessInstance processInstance : list) {
+            System.out.println("----------------------------");
+            System.out.println("流程实例id："
+                    + processInstance.getProcessInstanceId());
+            System.out.println("所属流程定义id："
+                    + processInstance.getProcessDefinitionId());
+            System.out.println("是否执行完成：" + processInstance.isEnded());
+            System.out.println("是否暂停：" + processInstance.isSuspended());
+            System.out.println("当前活动标识：" + processInstance.getActivityId());
+        }
+    }
+
+
 }
