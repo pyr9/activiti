@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
     </list>
@@ -46,7 +45,23 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ActivitiDemo.findHistoryInfo">
+  <component name="RunManager" selected="JUnit.ActivitiDemo.queryProcessInstance">
+    <configuration name="ActivitiDemo.addBusinessKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
+      <option name="METHOD_NAME" value="addBusinessKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActivitiDemo.deleteDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -79,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivitiDemo.testCompleteTask2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivitiDemo.queryProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
         <pattern>
@@ -89,23 +104,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
       <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="testCompleteTask2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivitiDemo.testDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pyr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="testDeployment" />
+      <option name="METHOD_NAME" value="queryProcessInstance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivitiDemo.queryProcessInstance" />
+        <item itemvalue="JUnit.ActivitiDemo.addBusinessKey" />
         <item itemvalue="JUnit.ActivitiDemo.findHistoryInfo" />
         <item itemvalue="JUnit.ActivitiDemo.deleteDeployment" />
         <item itemvalue="JUnit.ActivitiDemo.testStartProcess" />
-        <item itemvalue="JUnit.ActivitiDemo.testDeployment" />
-        <item itemvalue="JUnit.ActivitiDemo.testCompleteTask2" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675347479815</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="流程删除 ? 奇怪我这里把部署删除后，之前的历史任务也没有了">
+      <created>1675388304961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675388304961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +205,8 @@
     <MESSAGE value="流程操作&#10;1.流程定义&#10;2.流程部署:将流程图的内容存储到数据库&#10;3.启动流程实例&#10;4.待办任务查询&#10;5.流程任务处理" />
     <MESSAGE value="流程定义信息查询" />
     <MESSAGE value="流程删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="流程删除" />
+    <MESSAGE value="流程删除 ? 奇怪我这里把部署删除后，之前的历史任务也没有了" />
+    <option name="LAST_COMMIT_MESSAGE" value="流程删除 ? 奇怪我这里把部署删除后，之前的历史任务也没有了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

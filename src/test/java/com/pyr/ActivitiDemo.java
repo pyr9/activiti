@@ -153,4 +153,23 @@ public class ActivitiDemo {
             System.out.println("<==========================>");
         }
     }
+
+    /**
+     * 启动流程实例，添加businessKey
+     */
+    @Test
+    public void addBusinessKey(){
+//        1、得到ProcessEngine
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        2、得到RunTimeService
+        RuntimeService runtimeService = processEngine.getRuntimeService();
+//        3、启动流程实例，同时还要指定业务标识businessKey，也就是出差申请单id，这里是1001
+        ProcessInstance processInstance = runtimeService.
+                startProcessInstanceByKey("myProcess","0001");
+//        4、输出processInstance相关属性
+        System.out.println("业务id=="+processInstance.getBusinessKey());
+
+    }
+
+
 }
