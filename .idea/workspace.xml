@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
     </list>
@@ -48,7 +47,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ActivitiDemo.assigneeUEL">
+  <component name="RunManager" selected="JUnit.ActivitiDemo.testCompleteTask2">
     <configuration name="ActivitiDemo.SuspendAllProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -60,6 +59,22 @@
       <option name="PACKAGE_NAME" value="com.pyr" />
       <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
       <option name="METHOD_NAME" value="SuspendAllProcessInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiDemo.SuspendSingleProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
+      <option name="METHOD_NAME" value="SuspendSingleProcessInstance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,29 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivitiDemo.testStartProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pyr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="testStartProcess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ActivitiDemo.assigneeUEL" />
         <item itemvalue="JUnit.ActivitiDemo.testCompleteTask2" />
+        <item itemvalue="JUnit.ActivitiDemo.SuspendSingleProcessInstance" />
         <item itemvalue="JUnit.ActivitiDemo.SuspendAllProcessInstance" />
+        <item itemvalue="JUnit.ActivitiDemo.assigneeUEL" />
         <item itemvalue="JUnit.ActivitiDemo.testFindPersonalTasks" />
-        <item itemvalue="JUnit.ActivitiDemo.testStartProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670999098268</updated>
       <workItem from="1670999101218" duration="1879000" />
-      <workItem from="1675604615819" duration="8479000" />
+      <workItem from="1675604615819" duration="9098000" />
     </task>
     <task id="LOCAL-00001" summary="生成activiti的25张数据库表">
       <created>1675345961625</created>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675608961297</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="全部流程实例挂起与激活">
+      <created>1675780039147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675780039147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +240,8 @@
     <MESSAGE value="添加businessKey" />
     <MESSAGE value=" 查询流程实例" />
     <MESSAGE value="设置流程变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置流程变量" />
+    <MESSAGE value="全部流程实例挂起与激活" />
+    <option name="LAST_COMMIT_MESSAGE" value="全部流程实例挂起与激活" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

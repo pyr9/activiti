@@ -259,4 +259,37 @@ public class ActivitiDemo {
         }
 
     }
+
+    /**
+     * 单个流程实例挂起
+     */
+    @Test
+    public void SuspendSingleProcessInstance(){
+//        获取processEngine
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        RuntimeService
+        RuntimeService runtimeService = processEngine.getRuntimeService();
+//        查询流程定义的对象
+        ProcessInstance processInstance = runtimeService.
+                createProcessInstanceQuery().
+                processInstanceId("15001").
+                singleResult();
+//        得到当前流程定义的实例是否都为暂停状态
+        boolean suspended = processInstance.isSuspended();
+//        流程定义id
+        String processDefinitionId = processInstance.getId();
+//        判断是否为暂停
+        if(suspended){
+//         如果是暂停，可以执行激活操作 ,参数：流程定义id
+            runtimeService.activateProcessInstanceById(processDefinitionId);
+            System.out.println("流程定义："+processDefinitionId+",已激活");
+        }else{
+//          如果是激活状态，可以暂停，参数：流程定义id
+            runtimeService.suspendProcessInstanceById( processDefinitionId);
+            System.out.println("流程定义："+processDefinitionId+",已挂起");
+        }
+
+    }
+
+
 }
