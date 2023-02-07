@@ -84,12 +84,12 @@ public class ActivitiDemo {
         // 2. 获取taskService
         TaskService taskService = processEngine.getTaskService();
         // 3. 如果可以确定是一个任务，可以直接通过singleResult获得, 依次修改taskAssignee为直线经理，部门经理，财务人员
-        List<Task> tasks = taskService.createTaskQuery()
+        Task tasks = taskService.createTaskQuery()
                 .processDefinitionKey("myProcess")
                 .taskAssignee("张三")
-                .list();
+                .singleResult();
         // 3. 根据任务id完成任务
-        taskService.complete(tasks.get(0).getId());
+        taskService.complete(tasks.getId());
         System.out.println("DONE!");
     }
 
@@ -212,13 +212,51 @@ public class ActivitiDemo {
         RuntimeService runtimeService = processEngine.getRuntimeService();
 //        设置assignee的取值，用户可以在界面上设置流程的执行
         Map<String,Object> assigneeMap = new HashMap<>();
-        assigneeMap.put("assignee0","Lisa1");
-        assigneeMap.put("assignee1","李经理");
-        assigneeMap.put("assignee2","王总经理");
+        assigneeMap.put("assignee0","王武");
+        assigneeMap.put("assignee1","李经理3.0");
+        assigneeMap.put("assignee2","王总经理.0");
         assigneeMap.put("assignee3","赵财务");
 //        启动流程实例，同时还要设置流程定义的assignee的值
         runtimeService.startProcessInstanceByKey("myProcess",assigneeMap);
 //       输出
         System.out.println(processEngine.getName());
+    }
+
+    /**
+     * 全部流程实例挂起与激活
+     * 流程定义为挂起状态时：
+     *  1.该流程定义将不允许启动新的流程实例，
+     *  2.该流程定义下所有的流程实例将全部挂起暂停执行。
+     */
+    @Test
+    public void SuspendAllProcessInstance(){
+//        获取processEngine
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        获取repositoryService
+        RepositoryService repositoryService = processEngine.getRepositoryService();
+//        查询流程定义的对象
+        ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().
+                processDefinitionKey("myProcess").
+                singleResult();
+//        得到当前流程定义的实例是否都为暂停状态
+        boolean suspended = processDefinition.isSuspended();
+//        流程定义id
+        String processDefinitionId = processDefinition.getId();
+//        判断是否为暂停
+        if(suspended){
+//         如果是暂停，可以执行激活操作 ,参数1 ：流程定义id ，参数2：是否激活，参数3：激活时间
+            repositoryService.activateProcessDefinitionById(processDefinitionId,
+                    true,
+                    null
+            );
+            System.out.println("流程定义："+processDefinitionId+",已激活");
+        }else{
+//          如果是激活状态，可以暂停，参数1 ：流程定义id ，参数2：是否暂停，参数3：暂停时间
+            repositoryService.suspendProcessDefinitionById(processDefinitionId,
+                    true,
+                    null);
+            System.out.println("流程定义："+processDefinitionId+",已挂起");
+        }
+
     }
 }
