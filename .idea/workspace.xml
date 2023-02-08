@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc97996-9c20-40ff-9c65-26e037dca078" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bpmn/assginee-listener.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
     </list>
@@ -12,6 +14,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="new-activiti-diagram.bpmn20" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +49,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "0ae6d31ddee42ec6e18f8e3c8a426d75"
   },
   "keyToStringList": {
@@ -47,7 +58,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ActivitiDemo.testCompleteTask2">
+  <component name="RunManager" selected="JUnit.TestListener.testDeployment">
     <configuration name="ActivitiDemo.SuspendAllProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -75,22 +86,6 @@
       <option name="PACKAGE_NAME" value="com.pyr" />
       <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
       <option name="METHOD_NAME" value="SuspendSingleProcessInstance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivitiDemo.assigneeUEL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pyr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.ActivitiDemo" />
-      <option name="METHOD_NAME" value="assigneeUEL" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,13 +123,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestListener.testDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.TestListener" />
+      <option name="METHOD_NAME" value="testDeployment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestListener.testDeployment" />
+        <item itemvalue="JUnit.ActivitiDemo.testFindPersonalTasks" />
         <item itemvalue="JUnit.ActivitiDemo.testCompleteTask2" />
         <item itemvalue="JUnit.ActivitiDemo.SuspendSingleProcessInstance" />
         <item itemvalue="JUnit.ActivitiDemo.SuspendAllProcessInstance" />
-        <item itemvalue="JUnit.ActivitiDemo.assigneeUEL" />
-        <item itemvalue="JUnit.ActivitiDemo.testFindPersonalTasks" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670999098268</updated>
       <workItem from="1670999101218" duration="1879000" />
-      <workItem from="1675604615819" duration="9098000" />
+      <workItem from="1675604615819" duration="12546000" />
     </task>
     <task id="LOCAL-00001" summary="生成activiti的25张数据库表">
       <created>1675345961625</created>
@@ -212,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675780039147</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="单个流程实例挂起">
+      <created>1675780513595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675780513595</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +259,8 @@
     <MESSAGE value=" 查询流程实例" />
     <MESSAGE value="设置流程变量" />
     <MESSAGE value="全部流程实例挂起与激活" />
-    <option name="LAST_COMMIT_MESSAGE" value="全部流程实例挂起与激活" />
+    <MESSAGE value="单个流程实例挂起" />
+    <option name="LAST_COMMIT_MESSAGE" value="单个流程实例挂起" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

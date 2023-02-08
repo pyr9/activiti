@@ -56,7 +56,7 @@ public class ActivitiDemo {
         // 3. 根据流程key和任务负责人 查询任务
         List<Task> tasks = taskService.createTaskQuery()
                 .processDefinitionKey("myProcess")
-                .taskAssignee("Lisa1")
+                .taskAssignee("李经理2.0")
                 .list();
         // 4. 输出
         tasks.forEach(task -> {
