@@ -9,11 +9,16 @@ import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ActivitiDemo {
 
     @Test
@@ -55,8 +60,8 @@ public class ActivitiDemo {
         TaskService taskService = processEngine.getTaskService();
         // 3. 根据流程key和任务负责人 查询任务
         List<Task> tasks = taskService.createTaskQuery()
-                .processDefinitionKey("myProcess")
-                .taskAssignee("李经理2.0")
+                .processDefinitionKey("process-variable")
+                .taskAssignee("王总经理2")
                 .list();
         // 4. 输出
         tasks.forEach(task -> {

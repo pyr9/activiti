@@ -1,4 +1,4 @@
-package org.example.pojo;
+package com.pyr.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
