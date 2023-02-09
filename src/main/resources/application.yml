@@ -1,9 +1,9 @@
 logging:
   level:
     org.activiti.engine.impl.persistence.entity: debug
-server:
-  port: 8085
 spring:
+  profiles:
+    active: test
   datasource:
     url: jdbc:mysql:///activiti?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     username: root

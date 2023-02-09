@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc7694b-2b99-42b6-9839-1f48a0439c34" name="Changes" comment="打印activiti的sql日志">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pyr/ActApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Evection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pyr/pojo/Evection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" beforeDir="false" />
+    <list default="true" id="5bc7694b-2b99-42b6-9839-1f48a0439c34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestProcVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestProcVariable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,12 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestProcVariable.testDeployment">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ActApplication (1)">
     <configuration name="TestProcVariable.completTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
@@ -146,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestProcVariable.testDeployment" />
         <item itemvalue="Spring Boot.ActApplication (1)" />
+        <item itemvalue="JUnit.TestProcVariable.testDeployment" />
         <item itemvalue="Spring Boot.ActApplication" />
         <item itemvalue="JUnit.TestProcVariable.completTask" />
         <item itemvalue="JUnit.TestProcVariable.startProcess" />
@@ -243,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675912476420</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改spring-maven项目为springboot项目">
+      <created>1675930236294</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675930236294</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +278,8 @@
     <MESSAGE value="全部流程实例挂起与激活" />
     <MESSAGE value="单个流程实例挂起" />
     <MESSAGE value="打印activiti的sql日志" />
-    <option name="LAST_COMMIT_MESSAGE" value="打印activiti的sql日志" />
+    <MESSAGE value="修改spring-maven项目为springboot项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改spring-maven项目为springboot项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
