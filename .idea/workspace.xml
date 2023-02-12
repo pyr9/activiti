@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc7694b-2b99-42b6-9839-1f48a0439c34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterDir="false" />
+    <list default="true" id="aa8cd9aa-83da-41d2-aa15-e6659e0240d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bpmn/phone-expense2.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestCandidateUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pyr/ActApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pyr/ActApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,38 +38,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "0ae6d31ddee42ec6e18f8e3c8a426d75"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0ae6d31ddee42ec6e18f8e3c8a426d75&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ActApplication (1)">
-    <configuration name="TestProcVariable.completTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestCandidateUsers.findGroupTaskList">
+    <configuration name="TestCandidateUsers.findGroupTaskList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
         <pattern>
@@ -76,14 +78,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestProcVariable" />
-      <option name="METHOD_NAME" value="completTask" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.TestCandidateUsers" />
+      <option name="METHOD_NAME" value="findGroupTaskList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProcVariable.startProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCandidateUsers.testDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activity01" />
       <extension name="coverage">
         <pattern>
@@ -92,8 +94,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestProcVariable" />
-      <option name="METHOD_NAME" value="startProcess" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.TestCandidateUsers" />
+      <option name="METHOD_NAME" value="testDeployment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCandidateUsers.testStartProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pyr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pyr" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.TestCandidateUsers" />
+      <option name="METHOD_NAME" value="testStartProcess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,26 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ActApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCandidateUsers.findGroupTaskList" />
+        <item itemvalue="JUnit.TestCandidateUsers.testStartProcess" />
+        <item itemvalue="JUnit.TestCandidateUsers.testDeployment" />
         <item itemvalue="Spring Boot.ActApplication (1)" />
         <item itemvalue="JUnit.TestProcVariable.testDeployment" />
-        <item itemvalue="Spring Boot.ActApplication" />
-        <item itemvalue="JUnit.TestProcVariable.completTask" />
-        <item itemvalue="JUnit.TestProcVariable.startProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +294,15 @@
           <line>96</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/pyr/TestCandidateUsers.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.security.core.userdetails.UsernameNotFoundException" package="org.springframework.security.core.userdetails" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

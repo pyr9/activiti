@@ -14,7 +14,7 @@ spring:
     #2.true： activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建
     #3.create_drop： 在activiti启动时创建表，在关闭时删除表（必须手动关闭引擎，才能删除表）
     #4.drop-create： 在activiti启动时删除原来的旧表，然后在创建新表（不需要手动关闭引擎）
-    database-schema-update: drop-create
+    database-schema-update: true
     #检测历史表是否存在 activiti7默认没有开启数据库历史记录 启动数据库历史记录
     db-history-used: true
     #记录历史等级 可配置的历史级别有none, activity, audit, full
@@ -25,3 +25,9 @@ spring:
     history-level: full
     #校验流程文件，默认校验resources下的processes文件夹里的流程文件
     check-process-definitions: false
+  security:
+    basic:
+      enabled: false
+  management:
+    security:
+       enabled: false
