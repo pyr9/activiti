@@ -13,12 +13,12 @@
     <sequenceFlow id="sid-a842a952-65f4-4abc-83e4-cc6b63e4e1a2" sourceRef="sid-35113561-9679-4537-935e-7d2fed6512ff" targetRef="sid-c4735bc1-fe22-450c-a623-94eeb81628f4"/>
     <exclusiveGateway id="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b" name="出差天数判断"/>
     <sequenceFlow id="sid-a1916827-9264-4d6f-8dcf-b3bacecddff4" sourceRef="sid-5d0c8423-529e-4703-ba77-b643b58f9f3c" targetRef="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b"/>
-    <sequenceFlow id="sid-b62c915f-29df-4921-a36d-003a629e8b45" sourceRef="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b" targetRef="sid-d37b5f95-1005-4296-9402-c49208a069f6" name="出差天数大于1">
+    <sequenceFlow id="sid-b62c915f-29df-4921-a36d-003a629e8b45" sourceRef="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b" targetRef="sid-d37b5f95-1005-4296-9402-c49208a069f6" name="出差天数大于等于3">
       <documentation/>
-      <conditionExpression xsi:type="tFormalExpression">evection.days&gt;1</conditionExpression>
+      <conditionExpression xsi:type="tFormalExpression">${evection.days&gt;=3}</conditionExpression>
     </sequenceFlow>
-    <sequenceFlow id="sid-cf15f3ba-bb74-4fb5-8f5c-6a8e4f29c6c2" sourceRef="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b" targetRef="sid-35113561-9679-4537-935e-7d2fed6512ff" name="出差天数大于4">
-      <conditionExpression xsi:type="tFormalExpression">${evection.days&gt;4}</conditionExpression>
+    <sequenceFlow id="sid-cf15f3ba-bb74-4fb5-8f5c-6a8e4f29c6c2" sourceRef="sid-b70e358e-b14d-4d8e-95a4-bb43c8153a2b" targetRef="sid-35113561-9679-4537-935e-7d2fed6512ff" name="出差天数小于3">
+      <conditionExpression xsi:type="tFormalExpression">${evection.days&lt;3}</conditionExpression>
     </sequenceFlow>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_process-variable">

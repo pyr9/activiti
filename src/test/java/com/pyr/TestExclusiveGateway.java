@@ -51,10 +51,10 @@ public class TestExclusiveGateway {
 //      定义流程变量，把出差pojo对象放入map
         map.put("evection",evection);
 //      设置assignee的取值，用户可以在界面上设置流程的执行
-        map.put("assignee0","小明2");
-        map.put("assignee1","李经理2");
-        map.put("assignee2","王总经理2");
-        map.put("assignee3","赵财务2");
+        map.put("assignee0","小明b");
+            map.put("assignee1","李经理b");
+        map.put("assignee2","王总经理b");
+        map.put("assignee3","赵财务b");
 //        启动流程实例，并设置流程变量的值（把map传入）
         ProcessInstance processInstance = runtimeService
                 .startProcessInstanceByKey(key, map);
@@ -73,7 +73,7 @@ public class TestExclusiveGateway {
         // 3. 如果可以确定是一个任务，可以直接通过singleResult获得, 依次修改taskAssignee为直线经理，部门经理，财务人员
         Task tasks = taskService.createTaskQuery()
                 .processDefinitionKey("exclusiveGateway")
-                .taskAssignee("小明2")
+                .taskAssignee("李经理b")
                 .singleResult();
         // 3. 根据任务id完成任务
         taskService.complete(tasks.getId());
