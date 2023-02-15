@@ -25,9 +25,3 @@ spring:
     history-level: full
     #校验流程文件，默认校验resources下的processes文件夹里的流程文件
     check-process-definitions: false
-  security:
-    basic:
-      enabled: false
-  management:
-    security:
-       enabled: false
