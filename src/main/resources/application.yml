@@ -8,7 +8,7 @@ spring:
     url: jdbc:mysql:///activiti?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     username: root
     password: 19980617pyr
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   activiti:
     #1.flase：默认值。activiti在启动时，对比数据库表中保存的版本，如果没有表或者版本不匹配，将抛出异常
     #2.true： activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建
