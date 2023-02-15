@@ -3,7 +3,7 @@
   <process id="demo" name="测试自动部署" isExecutable="true">
     <startEvent id="sid-e07eddc4-6812-4e63-a575-e347a6f996c9"/>
     <userTask id="sid-2bbf6fe1-ca67-4c28-8070-367b001494ab" name="审批1" activiti:candidateGroups="activitiTeam"/>
-    <userTask id="sid-bcfa8f82-83a0-448c-92da-fb589d039096" name="审批2" activiti:candidateGroups="activitiTeam"/>
+    <userTask id="sid-bcfa8f82-83a0-448c-92da-fb589d039096" name="审批2" activiti:candidateGroups="otherTeam"/>
     <endEvent id="sid-af0af4e9-48e8-430a-b810-8948f96bb146"/>
     <sequenceFlow id="sid-01a102bf-b594-4e58-920f-760a12107184" sourceRef="sid-e07eddc4-6812-4e63-a575-e347a6f996c9" targetRef="sid-2bbf6fe1-ca67-4c28-8070-367b001494ab"/>
     <sequenceFlow id="sid-f52ecceb-69a3-4d5c-affe-4afb95875ce1" sourceRef="sid-2bbf6fe1-ca67-4c28-8070-367b001494ab" targetRef="sid-bcfa8f82-83a0-448c-92da-fb589d039096"/>
