@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8cd9aa-83da-41d2-aa15-e6659e0240d3" name="Changes" comment="测试并行网关">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bpmn/inclusive-gateway.bpmn20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestInclusiveGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bpmn/process-variable-condition.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/BasicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/DeploymentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ProcessDefinitionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ProcessInstanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d412cc68-556e-46f2-a5c7-fc22313617d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/exclusive-gateway.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/exclusive-gateway.bpmn20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/parallel-gateway.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/parallel-gateway.bpmn20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestParallelGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestParallelGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/phone-expense2.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/candidate-users.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/phoneExpense.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/basic.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bpmn/process-variable.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bpmn/process-variable.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/processes/demo.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/processes/candidate-groups.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ProcessVariableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestActiviti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/SecurityActiviti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestCandidateUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestCandidateUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/CreateDbTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestExclusiveGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestExclusiveGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestInclusiveGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/InclusiveGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ListenerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestParallelGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/ParallelGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pyr/TestProcVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pyr/TestProcVariable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,35 +54,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/panyurou/learn_activity/activity01/src/main/resources/bpmn&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22112212&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0ae6d31ddee42ec6e18f8e3c8a426d75&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/panyurou/learn/Activiti/activiti-basic/src/main/resources/bpmn",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22112212",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "53f00cddfa9e5e72e4f2a40ae5f66bd8",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/bpmn" />
@@ -80,9 +95,9 @@
       <recent name="com.pyr" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestParallelGateway.testCompleteTask2">
-    <configuration name="TestInclusiveGateway.startProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
+  <component name="RunManager" selected="JUnit.ProcessInstanceTest.queryProcessInstance">
+    <configuration name="BasicTest.findHistoryProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti-basic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pyr.*" />
@@ -90,15 +105,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestInclusiveGateway" />
-      <option name="METHOD_NAME" value="startProcess" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.BasicTest" />
+      <option name="METHOD_NAME" value="findHistoryProcessInstance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInclusiveGateway.testCompleteTask2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
+    <configuration name="BasicTest.testCompleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti-basic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pyr.*" />
@@ -106,15 +121,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestInclusiveGateway" />
-      <option name="METHOD_NAME" value="testCompleteTask2" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.BasicTest" />
+      <option name="METHOD_NAME" value="testCompleteTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParallelGateway.startProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
+    <configuration name="BasicTest.testFindPersonalTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti-basic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pyr.*" />
@@ -122,15 +137,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestParallelGateway" />
-      <option name="METHOD_NAME" value="startProcess" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.BasicTest" />
+      <option name="METHOD_NAME" value="testFindPersonalTasks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParallelGateway.testCompleteTask2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
+    <configuration name="BasicTest.testStartProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti-basic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pyr.*" />
@@ -138,15 +153,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestParallelGateway" />
-      <option name="METHOD_NAME" value="testCompleteTask2" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.BasicTest" />
+      <option name="METHOD_NAME" value="testStartProcess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParallelGateway.testDeployment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activity01" />
+    <configuration name="ProcessInstanceTest.queryProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti-basic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pyr.*" />
@@ -154,20 +169,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pyr" />
-      <option name="MAIN_CLASS_NAME" value="com.pyr.TestParallelGateway" />
-      <option name="METHOD_NAME" value="testDeployment" />
+      <option name="MAIN_CLASS_NAME" value="com.pyr.ProcessInstanceTest" />
+      <option name="METHOD_NAME" value="queryProcessInstance" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="activiti-basic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pyr.ActApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestParallelGateway.testCompleteTask2" />
-        <item itemvalue="JUnit.TestParallelGateway.startProcess" />
-        <item itemvalue="JUnit.TestParallelGateway.testDeployment" />
-        <item itemvalue="JUnit.TestInclusiveGateway.testCompleteTask2" />
-        <item itemvalue="JUnit.TestInclusiveGateway.startProcess" />
+        <item itemvalue="JUnit.ProcessInstanceTest.queryProcessInstance" />
+        <item itemvalue="JUnit.BasicTest.findHistoryProcessInstance" />
+        <item itemvalue="JUnit.BasicTest.testCompleteTask" />
+        <item itemvalue="JUnit.BasicTest.testFindPersonalTasks" />
+        <item itemvalue="JUnit.BasicTest.testStartProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +205,8 @@
       <workItem from="1675604615819" duration="12546000" />
       <workItem from="1675866213053" duration="1132000" />
       <workItem from="1676273468436" duration="3153000" />
+      <workItem from="1678351947319" duration="1033000" />
+      <workItem from="1678412267905" duration="15580000" />
     </task>
     <task id="LOCAL-00001" summary="生成activiti的25张数据库表">
       <created>1675345961625</created>
@@ -344,13 +368,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pyr/ActivitiDemo.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pyr/TestCandidateUsers.java</url>
-          <line>65</line>
+          <line>63</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

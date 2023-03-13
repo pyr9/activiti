@@ -25,7 +25,7 @@ public class TestProcVariable {
         // 3. 使用service进行流程的部署，定义流程名字，把bpmn部署到数据库中
         Deployment deploy = repositoryService.createDeployment()
                 .name("出差申请")
-                .addClasspathResource("bpmn/process-variable.bpmn20.xml")
+                .addClasspathResource("bpmn/process-variable-condition.bpmn20.xml")
                 .deploy();
         // 4. 输出部署信息
         System.out.println("流程部署id="+deploy.getId());
@@ -67,7 +67,7 @@ public class TestProcVariable {
      * 完成任务，判断当前用户是否有权限
      */
     @Test
-    public void completTask() {
+    public void completeTask() {
         //任务id
         String key = "process-variable";
 //        任务负责人

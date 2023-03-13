@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TestCreate {
+public class CreateDbTableTest {
     /**
      * 生成 activiti的数据库表
      */

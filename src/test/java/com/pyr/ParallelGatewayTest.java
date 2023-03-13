@@ -13,9 +13,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 并行网关：允许将流程分成多条分支，也可以把多条分支汇聚到一起。
+ * 案例：出差申请由部门经理审批后，需要同时由总经理审批和财务审批，才可以结束。
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TestParallelGateway {
+public class ParallelGatewayTest {
     @Test
     public void testDeployment(){
         // 1. 创建ProcessEngine

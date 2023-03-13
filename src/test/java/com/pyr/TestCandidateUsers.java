@@ -6,8 +6,6 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -25,7 +23,7 @@ public class TestCandidateUsers {
         // 3. 使用service进行流程的部署，定义流程名字，把bpmn部署到数据库中
         Deployment deploy = repositoryService.createDeployment()
                 .name("测试候选人")
-                .addClasspathResource("bpmn/phone-expense2.bpmn20.xml")
+                .addClasspathResource("bpmn/candidate-users.bpmn20.xml")
                 .deploy();
         // 4. 输出部署信息
         System.out.println("流程部署id="+deploy.getId());

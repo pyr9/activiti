@@ -19,10 +19,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
+/**
+ * 集成SpringSecurity后，流程操作
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
-public class TestActiviti {
+public class SecurityActiviti {
     @Autowired
     private ProcessRuntime processRuntime;
 
